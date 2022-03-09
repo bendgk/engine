@@ -462,6 +462,7 @@ func (w *GlfwWindow) SetCursor(cursor Cursor) {
 	} else if cursor == HiddenCursor {
 		w.Window.SetInputMode(glfw.CursorMode, glfw.CursorHidden)
 	} else {
+		w.Window.SetInputMode(glfw.CursorMode, glfw.CursorNormal)
 		w.Window.SetCursor(cur)
 	}
 }
