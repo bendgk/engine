@@ -24,6 +24,7 @@ void main() {
                 texMixed = texColor;
                 firstTex = false;
             } else {
+                texMixed = texColor;
                 texMixed = Blend(texMixed, texColor);
             }
         }
@@ -34,6 +35,7 @@ void main() {
                     texMixed = texColor;
                     firstTex = false;
                 } else {
+                    texMixed = texColor;
                     texMixed = Blend(texMixed, texColor);
                 }
             }
@@ -44,6 +46,7 @@ void main() {
                         texMixed = texColor;
                         firstTex = false;
                     } else {
+                        texMixed = texColor;
                         texMixed = Blend(texMixed, texColor);
                     }
                 }
